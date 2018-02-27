@@ -2,11 +2,16 @@
 	<head>
 		<title>DnD Podcast</title>
 		<style>
-		@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 		body {
-			font-family: 'Amatic SC', cursive !important;
-			margin:0;
-			font-size: 78px;
+		  padding: 10px;
+		  border: none;
+		  font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+		  color: #333;
+		  text-shadow: 0 0 10px rgba(230,230,230,1) , 0 0 20px rgba(230,230,230,1) , 0 0 30px rgba(230,230,230,1) , 0 0 40px #000 , 0 0 70px #000 , 0 0 80px #000 , 0 0 100px #000 ;
+		  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+		  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+		  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+		  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 		}
 		#bg {
 			position: fixed;
@@ -15,7 +20,7 @@
 			/* Preserve aspet ratio */
 			min-width: 100%;
 			min-height: 100%;
-			margin-left: -960px;
+			margin-left: -1025px;
 		}
 		div.container4
 		{
@@ -27,16 +32,16 @@
 			font-size: 2em;
 			margin: 0;
 			position: absolute;
-			top: 90%;
+			top: 120%;
 			left: 50%;
 			margin-right: -50%;
 			transform: translate(-50%, -90%)
 		}
-		@media (orientation:landscape) {
+		@media (orientation:landscape) and (max-width: 992px) {
 			p
 			{
 				position: absolute;
-				top: 50%;
+				top: 60%;
 				transform: translate(-50%, -50%)
 			}
 			#bg {
@@ -60,7 +65,8 @@
 	<body>
 		<img src="http://i.imgur.com/M10mKpg.jpg" id="bg" alt="">
 		<div class=container4>
-			<p>Coming Soon!</p>
+			<p>Coming Soon</p>
 		</div>
+		<link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 	</body>
 </html>
