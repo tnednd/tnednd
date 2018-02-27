@@ -1,158 +1,66 @@
 <html>
 	<head>
-		<title>GoT Pools!</title>
+		<title>DnD Podcast</title>
 		<style>
 		@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 		body {
-		font-family: 'Amatic SC', cursive !important;
-		margin:0;
-		font-size: 78px;
-		}
-		div {
-		}
-		.characters{
-			height: 100%;
-			overflow-y: scroll;
-		}
-		.character {
-		position: relative;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		overflow-x: hidden;
-		overflow-y: visible;
-		margin: 0;
-		padding: 1% 0;
-		width: 100%;
-		border-bottom: 1px solid;
-		border-color: #bbb;
-		}
-		.icon {
-		float: left;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		width: 10%;
-		}
-		.name {
-		float: left;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		width: 60%;
-		}
-		.suicide {
-		float: left;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		width: 15%;
-		font-size: .5em;
-		color: #00F;
-		border-right: 1px solid;
-		border-color: #bbb;
-		padding: 0 .4%;
-		}
-		.death {
-		float: left;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		width: 15%;
-		font-size: .5em;
-		color: #00F;
-		padding: 0 .4%;
-		}
-		.header {
-		position: relative;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		overflow-x: hidden;
-		overflow-y: visible;
-		margin: 1% 0 0 0;
-		width: 100%;
-		border-bottom: 1px solid #000;
-		}
-		.header > .icon {
-		border-bottom: 1px solid #000;
-		text-align: center;
-		}
-		.header > .name {
-		border-bottom: 1px solid #000;
-		text-align: center;
-		}
-		.header > .suicide {
-		border-bottom: 1px solid #000;
-		text-align: center;
-		font-size: 1em;
-		border-right: 0;
-		color: #000;
-		}
-		.header > .death {
-		border-bottom: 1px solid #000;
-		text-align: center;
-		font-size: 1em;
-		color: #000;
-		}
-		.dumb {
-		display: inline-block;
-		vertical-align: text-bottom;
-		}
-		.dead > .icon {
-		background: url("http://vignette2.wikia.nocookie.net/destinypedia/images/f/f2/Boss_skull_icon.png/revision/latest?cb=20161010183053") no-repeat center center;
-		background-size: 70%;
-		}
-		.dead > .name {
-		text-decoration: line-through;
-		}
-		.dead > .suicide {
-		color: #F00;
-		}
-		.dead > .death {
-		color: #16752b;
+			font-family: 'Amatic SC', cursive !important;
+			margin:0;
+			font-size: 78px;
 		}
 		#bg {
-		position: fixed;
-		top: 0;
-		left: 0;
-		opacity: 0.55;
-		/* Preserve aspet ratio */
-		min-width: 100%;
-		min-height: 100%;
+			position: fixed;
+			top: 0;
+			opacity: 0.55;
+			/* Preserve aspet ratio */
+			min-width: 100%;
+			min-height: 100%;
+			margin-left: -960px;
 		}
-		@media only screen and (min-width: 992px) {
+		div.container4
+		{
+			height: 10em;
+			position: relative
+		}
+		p
+		{
+			font-size: 2em;
+			margin: 0;
+			position: absolute;
+			top: 90%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -90%)
+		}
+		@media (orientation:landscape) {
+			p
+			{
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%, -50%)
+			}
+			#bg {
+			margin-left: -450px;
+			}
+		}
+		@media (min-width: 992px) {
 			body {
 				font-size: 39px;
 				font-weight: bold;
 			}
-			.characters {
-				overflow-y: visible;
-				height: auto;
-			}
-			.character {
-				width: 60%;
-				margin-left: 20%;
-			}
-			.header {
-				width: 60%;
-				margin-left: 20%;
-				font-size: 2em;
-			}
-			.death {
-				font-size: .8em;
-			}
-			.suicide {
-				font-size: .8em;
-			}
-			.dead > .icon {
-				background-size: 35%;
+			#bg {
+				top: 0%;
+				left: 0%;
+				margin-left: 0px;
+				margin-top:  0px;
 			}
 		}
 		</style>
 	</head>
 	<body>
 		<img src="http://i.imgur.com/M10mKpg.jpg" id="bg" alt="">
-		Coming Soon
+		<div class=container4>
+			<p>Coming Soon!</p>
+		</div>
 	</body>
 </html>
